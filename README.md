@@ -31,11 +31,11 @@ end:   00011101 01000111 01000111
 
 Use any language, but stick to the standard library if possible. If you run anything through your program twice, the output should be unchanged, as reversing the data should be, unsurprisingly, reversible.
 
-```bash
-echo "I am testing the byte reverser" > file.txt
-cat file.txt # I am testing the byte reverser
-your_program < file.txt # PN��N�n�N�.�F��.�v�.Φ.���
-your_program < file.txt | your_program # I am testing the byte reverser
+```
+$ echo "I am testing the byte reverser" | your_program
+PN��N�n�N�.�F��.�v�.Φ.���
+$ echo "I am testing the byte reverser" | your_program | your_program
+I am testing the byte reverser
 ```
 ---
 
