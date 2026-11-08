@@ -32,19 +32,16 @@ end:   00011101 01000111 01000111
 Use any language, but stick to the standard library if possible. If you run anything through your program twice, the output should be unchanged, as reversing the data should be, unsurprisingly, reversible.
 
 ```
-$ echo "I am testing the byte reverser" | your_program
-PN��N�n�N�.�F��.�v�.Φ.���
-$ echo "I am testing the byte reverser" | your_program | your_program
-I am testing the byte reverser
+$ echo 'Hello, world!' | your_program
+P�&6N��4�66�
+$ echo 'Hello, world!' | your_program | your_program
+Hello, world!
 ```
 ---
 
 Bonus challenges:
 
 1. Accept an optional explicit file argument (stdin should still be default).
-
-2. Make reversing bits and bytes independent and optional (toggled with environment variables, arguments, or both).
-
+2. Make reversing bits and bytes independent and optional (toggled with environment variables, command-line arguments, or both).
 3. Reverse every chunk of N bytes, rather than the entire file.
-
 4. Handle files or data that are **20GB+** (stdin should still be default).
